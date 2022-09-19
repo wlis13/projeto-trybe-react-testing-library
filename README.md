@@ -46,7 +46,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
   <summary><strong>🗓 Data de Entrega</strong></summary><br />
   
   * Este projeto é individual;
-  * São `X` dias de projeto;
+  * São `3` dias de projeto;
   * Data para entrega final do projeto: `28/09/2022 13:50`.
 
 </details>
@@ -58,7 +58,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
 
   1. Clone o repositório
 
-  - Use o comando: `git clone git@github.com:tryber/sd-024-b-project-react-testing-library.git`.
+  - Use o comando: `git clone git@github.com:tryber/sd-024-b-project-react-testing-library.git`
   - Entre na pasta do repositório que você acabou de clonar:
     - `cd sd-024-b-project-react-testing-library`
 
