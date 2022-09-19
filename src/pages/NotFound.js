@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-curly-brace-presence */
+/* eslint-disable quotes */
 import React from 'react';
 import './not-found.css';
 

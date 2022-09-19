@@ -1,3 +1,6 @@
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable react/jsx-curly-brace-presence */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +15,7 @@ import Routes from './routes';
 import './App.css';
 
 class App extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = { isPokemonFavoriteById: this.setIsPokemonFavoriteById() };
   }
@@ -41,9 +44,9 @@ class App extends Component {
       <div className="App">
         <h1>Pokédex</h1>
         <nav>
-          <Link className="link" to="/">{`Home`}</Link>
-          <Link className="link" to="/about">{`About`}</Link>
-          <Link className="link" to="/favorites">{`Favorite Pokémons`}</Link>
+          <Link className="link" to="/">{ `Home` }</Link>
+          <Link className="link" to="/about">{ `About` }</Link>
+          <Link className="link" to="/favorites">{ `Favorite Pokémons` }</Link>
         </nav>
         <Routes
           favoritePokemons={ favoritePokemons }
