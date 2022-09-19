@@ -7,7 +7,6 @@ import { NotFound } from '../pages';
 
 describe('testando componente <App /> ', () => {
   it('testa se existe três links no componente', () => {
-    // renderwithRouter
     renderWithRouter(<App />);
 
     const firsLink = screen.getByRole('link', { name: /Home/i });
