@@ -1,3 +1,7 @@
+/* eslint-disable template-curly-spacing */
+/* eslint-disable react/jsx-curly-spacing */
+/* eslint-disable react/jsx-curly-brace-presence */
+/* eslint-disable quotes */
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
@@ -14,16 +18,16 @@ class PokemonButtonsPanel extends Component {
         >
           All
         </Button>
-        {pokemonTypes.map((type) => (
+        { pokemonTypes.map((type) => (
           <Button
-            dataTestId={`pokemon-type-button`}
+            dataTestId={ `pokemon-type-button` }
             key={ type }
             onClick={ () => filterPokemons(type) }
             className="filter-button"
           >
-            {`${type}`}
+            { `${ type }` }
           </Button>
-        ))}
+        )) }
       </div>
     );
   }
