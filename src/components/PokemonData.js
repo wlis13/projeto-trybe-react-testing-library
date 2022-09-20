@@ -1,3 +1,6 @@
+/* eslint-disable template-curly-spacing */
+/* eslint-disable react/jsx-curly-brace-presence */
+/* eslint-disable quotes */
 import React, { Component } from 'react';
 import { pokemonType } from '../types';
 
@@ -10,14 +13,14 @@ class PokemonData extends Component {
       <>
         <section>
           <h2>{ `Summary` }</h2>
-          <p>{ `${summary}` }</p>
+          <p>{ `${ summary }` }</p>
         </section>
         <section>
-          <h2>{ `Game Locations of ${name}` }</h2>
+          <h2>{ `Game Locations of ${ name }` }</h2>
           <div className="pokemon-habitat">
             { foundAt.map(({ location, map }) => (
               <div key={ location }>
-                <img src={ `${map}` } alt={ `${name} location` } />
+                <img src={ `${ map }` } alt={ `${ name } location` } />
                 <p><em>{ location }</em></p>
               </div>
             )) }
