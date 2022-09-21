@@ -1,3 +1,7 @@
+/* eslint-disable template-curly-spacing */
+/* eslint-disable react/jsx-curly-brace-presence */
+/* eslint-disable quotes */
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -11,25 +15,24 @@ class Pokemon extends React.Component {
     const { pokemon, showDetailsLink, isFavorite } = this.props;
     const { averageWeight, id, image, name, type } = pokemon;
     const { measurementUnit, value } = averageWeight;
-
     return (
       <div className="pokemon">
         <div className="pokemon-overview">
-          <p data-testid="pokemon-name">{name}</p>
-          <p data-testid="pokemon-type">{`${type}`}</p>
+          <p data-testid="pokemon-name">{ name }</p>
+          <p data-testid="pokemon-type">{ `${ type }` }</p>
           <p data-testid="pokemon-weight">
-            Average weight: {value} {measurementUnit}
+            Average weight: { value } { measurementUnit }
           </p>
-          {showDetailsLink && <Link to={ `pokemons/${id}` }>More details</Link>}
+          { showDetailsLink && <Link to={ `pokemons/${ id }` }>More details</Link> }
         </div>
-        <img src={ `${image}` } alt={ `${name} sprite` } />
-        {isFavorite && (
+        <img src={ `${ image }` } alt={ `${ name } sprite` } />
+        { isFavorite && (
           <img
             className="favorite-icon"
             src={ `/star-icon.svg` }
-            alt={ `${name} is marked as favorite` }
+            alt={ `${ name } is marked as favorite` }
           />
-        )}
+        ) }
       </div>
     );
   }
